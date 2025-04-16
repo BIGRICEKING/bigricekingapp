@@ -1,0 +1,16 @@
+name: riceking_app
+publish_to: 'none'
+
+environment:
+  sdk: '^3.7.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.9.4+5
+  path_provider: ^2.0.2
+  http: ^0.13.3
+  http_parser: ^4.0.2
+
+flutter:
+  uses-material-design: true
