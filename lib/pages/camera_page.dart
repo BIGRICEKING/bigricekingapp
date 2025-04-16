@@ -69,7 +69,7 @@ class _CameraPageState extends State<CameraPage> {
   Future<void> uploadImage(String imagePath) async {
     try {
       File imageFile = File(imagePath);
-      var uri = Uri.parse("http://192.168.68.112:5000/upload"); // 替換為你的 API URL
+      var uri = Uri.parse("https://ricekingapp.onrender.com/upload"); // 替換為你的 API URL
       var request = http.MultipartRequest("POST", uri)
         ..files.add(await http.MultipartFile.fromPath(
           'file',
